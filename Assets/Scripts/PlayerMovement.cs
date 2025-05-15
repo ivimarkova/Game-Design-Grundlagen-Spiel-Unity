@@ -33,4 +33,10 @@ public class PlayerMovement : MonoBehaviour {
     {
         playerRb.linearVelocity = new Vector2 (input * speed, playerRb.linearVelocity.y);
     }
+    public void Die()
+    {
+        Debug.Log("Player died!");
+        //add here restart; losing life etc
+    }
+
 }
